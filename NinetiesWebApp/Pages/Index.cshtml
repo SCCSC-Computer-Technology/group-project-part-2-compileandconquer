@@ -1,0 +1,77 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@model NinetiesWebApp.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="user-list-box">
+    <h3 class="user-list-title">All Users</h3>
+    <ul>
+        @foreach (var user in Model.AllUsers)
+        {
+            <li class="user-item">
+                <a href="/Profile?userId=@user.UserId">@user.DisplayName</a>
+                <span class="online-status" id="online-status-@user.UserId" style="display: none;">Online Now!</span>
+            </li>
+        }
+    </ul>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    @* Show "You Gotta Log In" message only if not logged in *@
+    @if (User.Identity == null || !User.Identity.IsAuthenticated)
+    {
+        <p>You Gotta Log In to Use Our Stuff!</p>
+    }
+    else
+    {
+        @* Show button if user is logged in *@
+        <a href="/Chat" class="btn retro-btn mt-3">Enter Chat Room!</a>
+        <a href="/Profile" class="btn retro-btn mt-3"> Your Profile </a>
+        <a href="/Guess" class="btn retro-btn mt-3"> Guess the Artist! </a>
+        <a href="/GameHub" class="btn retro-btn mt-3"> Play Games! </a>
+        <a href="/Calendar" class="btn retro-btn mt-3"> Calendar! </a>
+
+    }
+
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/onlineStatusHub")
+            .build();
+
+        connection.on("UpdateOnlineUsers", (onlineUserIds) => {
+            // Hide all online status spans first
+            document.querySelectorAll(".online-status").forEach(span => {
+                span.style.display = "none";
+            });
+
+            // Show "Online Now!" for online users
+            onlineUserIds.forEach(userId => {
+                const statusSpan = document.getElementById(`online-status-${userId}`);
+                if (statusSpan) {
+                    statusSpan.style.display = "inline";
+                }
+            });
+        });
+
+        connection.start().then(() => {
+            console.log("Connected to OnlineStatusHub!");
+            // Request initial online users list
+            connection.invoke("GetOnlineUsers").catch(err => console.error(err));
+        }).catch(err => {
+            console.error("Connection failed: ", err);
+        });
+    </script>
+}
+
+
+

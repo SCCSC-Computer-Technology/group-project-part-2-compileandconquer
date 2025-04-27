@@ -1,0 +1,208 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Changed the text color to white since background is dark. This makes the placeholder text in the boxes black so you can see em.*/
+input::placeholder,
+textarea::placeholder {
+    color: black !important;
+    opacity: 1;
+}
+
+/* White placeholder text was still showing on top of the black, made it look all weird. This got rid of it. Had to look this up.*/
+form label {
+    display: none;
+}
+
+.retro-btn {
+    background: linear-gradient(to bottom, #e0e0e0, #a0a0a0);
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    box-shadow: inset -2px -2px 0px #fff, inset 2px 2px 0px #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+    .retro-btn:hover {
+        background: linear-gradient(to bottom, #a0a0a0, #707070);
+        box-shadow: inset -2px -2px 0px #ccc, inset 2px 2px 0px #000;
+        color: white;
+    }
+
+.question-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.user-list-box {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 260px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
+
+
+}
+
+.user-list-title {
+    text-decoration: underline;
+}
+
+    .user-list-box h3 {
+        color: white;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+.user-item {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+    .user-item:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+
+.online-status {
+    color: lime; /* Green color for "Online Now!" */
+    font-weight: bold;
+    margin-left: 5px; /* Space between the display name and status */
+    text-shadow: 0 0 1px #ffff33, 0 0 2px #ff0;
+
+
+    }
+    /* Guestbook-specific styles */
+.guestbook-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px dashed hotpink;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+}
+
+    .guestbook-section h3 {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 15px;
+    }
+
+    .guestbook-section p {
+        font-size: 14px;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    .guestbook-section label {
+        font-size: 14px;
+        color: black;
+    }
+
+    .guestbook-section .form-control {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 14px;
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+        padding: 8px;
+    }
+
+    .guestbook-section select.form-control {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 14px;
+        background-color: transparent;
+        color: black;
+    }
+
+    .guestbook-section .text-danger {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 12px;
+        color: black; /* Override default red */
+    }
+
+.guestbook-entry {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lime;
+}
+
+    .guestbook-entry p {
+        font-size: 14px;
+        color: black;
+        text-shadow: 2px 2px #00ffff; /* Cyan glow */
+    }
+
+    .guestbook-entry strong {
+        font-size: 14px;
+        color: black;
+    }
+
+    .guestbook-entry span {
+        font-size: 14px;
+        color: black;
+    }
+
+    .guestbook-entry small {
+        font-size: 12px;
+        color: black; /* Change from darkcyan */
+    }
+
+.guestbook-section p:not(.guestbook-entry p) {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.guestbook-entry:hover {
+    background-color: rgba(255, 105, 180, 0.2); /* Hotpink tint */
+}
+

@@ -1,0 +1,178 @@
+﻿@page
+@model NinetiesWebApp.Pages.CalendarModel
+@{
+    ViewData["Title"] = "90s Shared & Private Calendar";
+}
+<style>
+    body {
+        background-color: #2B2D42; /* Dark navy for retro CRT vibe */
+        color: #EDF2F4; /* Off-white as default */
+        font-family: 'Press Start 2P', 'Comic Sans MS', cursive;
+    }
+    .calendar-container {
+        background: linear-gradient(135deg, #B026FF, #7209B7); /* Neon purple gradient */
+        border: 5px solid #0AFF99; /* Neon green border */
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 800px;
+        box-shadow: 0 0 15px rgba(10, 255, 153, 0.5);
+    }
+    .event-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .event-list li {
+        background-color: #8D99AE; /* Gray-blue for events */
+        margin: 10px 0;
+        padding: 10px;
+        border: 2px solid #0AFF99;
+        border-radius: 8px;
+        transition: transform 0.2s;
+        color: #2B2D42; /* Dark navy for event details */
+    }
+    .event-list li:hover {
+        transform: scale(1.02);
+    }
+    .btn-neon {
+        background-color: #0AFF99; /* Neon green */
+        color: #2B2D42; /* Dark navy */
+        border: 3px solid #B026FF; /* Neon purple */
+        padding: 8px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+        text-transform: uppercase;
+        font-family: 'Press Start 2P', cursive;
+        transition: all 0.3s;
+        box-shadow: 0 0 10px #0AFF99;
+    }
+    .btn-neon:hover {
+        background-color: #EDF2F4;
+        color: #B026FF;
+        box-shadow: 0 0 15px #B026FF;
+    }
+    .on-this-day {
+        background-color: #8D99AE;
+        color: #EDF2F4;
+        padding: 10px;
+        border: 3px solid #0AFF99;
+        margin-top: 20px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+    select, input[type="text"], input[type="datetime-local"] {
+        background-color: #EDF2F4;
+        color: #2B2D42;
+        border: 2px solid #0AFF99;
+        padding: 5px;
+        font-family: 'Press Start 2P', 'Comic Sans MS', cursive;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    input[type="datetime-local"]::placeholder {
+        color: #B026FF; /* Neon purple placeholder */
+        opacity: 1;
+    }
+    input[type="datetime-local"]:focus::placeholder {
+        color: transparent;
+    }
+    .blink {
+        animation: blink 1s step-end infinite;
+    }
+    .text-neon-green {
+        color: #0AFF99; /* Neon green for UserName */
+    }
+    .text-neon-purple {
+        color: #B026FF; /* Neon purple for CreatedByUserName */
+    }
+    .text-light-purple {
+        color: #C77DFF; /* Lighter purple for private events */
+    }
+    .text-heading {
+        color: #FF70A6; /* Neon pink for headings */
+    }
+    .text-info {
+        color: #B026FF; /* Neon purple for info text */
+    }
+    @@keyframes blink { 
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<div class="calendar-container">
+    <h1 class="blink">📅 Totally Rad Calendar</h1>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <p class="text-info">Log in to join the 90s party!</p>
+        <a class="btn-neon" asp-page="/Account/Login">Log In</a>
+    }
+    else
+    {
+        @if (User.Identity.IsAuthenticated)
+        {
+            <p class="text-info">Welcome, <span class="text-neon-green">@Model.UserName</span>! Add some rad events!</p>
+            <form method="post" asp-page-handler="CreateEvent">
+                <input type="text" name="Title" placeholder="Event Title" required />
+                <input type="datetime-local" name="StartTime" required placeholder="Start Time" />
+                <input type="datetime-local" name="EndTime" required placeholder="End Time" />
+                <select name="IsShared" required>
+                    <option value="true">Shared (Everyone Sees)</option>
+                    <option value="false">Private (Just Me)</option>
+                </select>
+                <button type="submit" class="btn-neon">Add Event</button>
+            </form>
+
+            @if (!Model.IsGoogleAuthenticated)
+            {
+                <p class="text-info">Connect your Google Calendar for private events!</p>
+                <a class="btn-neon" href="@Model.AuthUrl">Connect Google Calendar</a>
+            }
+        }
+        <h2 class="text-heading">Upcoming Events</h2>
+        <ul class="event-list">
+            @foreach (var evt in Model.Events)
+            {
+                <li>
+                    <strong>@evt.Title</strong> - @evt.StartTime.ToString("MMM dd, yyyy HH:mm") to @evt.EndTime.ToString("HH:mm")
+                    @if (evt.IsShared)
+                    {
+                        @:<br />
+                        @:Created by: <span class="text-neon-purple">@evt.CreatedByUserName</span>
+                        @if (evt.UserResponse != null)
+                        {
+                            @:<span>(You @(evt.UserResponse.Accepted ? "Accepted" : "Declined"))</span>
+                        }
+                        else if (evt.CreatedByUserName != Model.UserName)
+                        {
+                            <form method="post" asp-page-handler="Respond" style="display:inline;">
+                                <input type="hidden" name="EventId" value="@evt.Id" />
+                                <button type="submit" name="Accepted" value="true" class="btn-neon">Accept</button>
+                                <button type="submit" name="Accepted" value="false" class="btn-neon">Decline</button>
+                            </form>
+                        }
+                    }
+                    else
+                    {
+                        @:<span class="text-light-purple">(Private)</span>
+                    }
+                </li>
+            }
+        </ul>
+        @if (Model.IsGoogleAuthenticated)
+        {
+            <a class="btn-neon" href="/calendar?handler=SignOutGoogle">Disconnect Google Barrel</a>
+        }
+    }
+    @if (!string.IsNullOrEmpty(Model.OnThisDay))
+    {
+        <div class="on-this-day">
+            <h3 class="blink">On This Day in the 90s...</h3>
+            <p>@Model.OnThisDay</p>
+        </div>
+    }
+</div>

@@ -1,0 +1,23 @@
+﻿@page
+@model NinetiesWebApp.Pages.GameHubModel
+@{
+    ViewData["Title"] = "Game Hub";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>🎮 Game Hub</h2>
+    <p>Choose a game to play:</p>
+
+    <div class="game-list">
+        <a asp-page="/EmojiCharades" class="btn btn-primary mb-3">🎭 Emoji Charades</a><br />
+        <a asp-page="/EmojiChameleon" class="btn btn-success mb-3">🦎 Emoji Chameleon</a><br />
+    </div>
+}
+else
+{
+    <div class="alert alert-warning text-center">
+        <p>Please <a asp-area="Identity" asp-page="/Account/Login">log in</a> to play games.</p>
+    </div>
+}
+

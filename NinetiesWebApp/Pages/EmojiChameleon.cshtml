@@ -1,0 +1,270 @@
+﻿@page
+@model NinetiesWebApp.Pages.EmojiChameleonModel
+@{
+    ViewData["Title"] = "Emoji Chameleon";
+}
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>🦎 Emoji Chameleon</h2>
+
+    <!-- How to Play Toggle Button -->
+    <button id="rulesBtn" class="btn btn-info mb-3">📜 How to Play</button>
+
+    <!-- Hidden Rules Section -->
+    <div id="rulesBox" class="alert alert-light border" style="display: none;">
+        <h5>How to Play Emoji Chameleon</h5>
+        <ul>
+            <li>Each round, one player is randomly assigned as the <strong>Chameleon</strong>.</li>
+            <li>All other players see the secret word (highlighted) — the Chameleon does not!</li>
+            <li>Taking turns, each player gives a clue related to the secret word.</li>
+            <li>The Chameleon's goal is to blend in by giving a convincing clue!</li>
+            <li>After all clues are submitted, players vote on who they think the Chameleon is.</li>
+        </ul>
+    </div>
+
+
+    <!-- Name Entry -->
+    <div id="lobbySection">
+        <input type="text" id="playerNameInput" placeholder="Enter your name" class="form-control mb-2" />
+        <button id="joinBtn" class="btn btn-primary mb-2">Join Game</button><br />
+    </div>
+
+    <hr />
+
+    <!-- Player List + Start -->
+    <div id="playerList" style="margin-bottom: 20px;">
+        <h5>Players in Lobby</h5>
+        <ul id="playersUl"></ul>
+        <button id="startGameBtn" class="btn btn-success">Start Game</button>
+    </div>
+
+    <!-- Word Grid -->
+    <div id="gridSection">
+        <h5>🪠 Word Grid</h5>
+        <div id="wordGrid" class="grid-container"></div>
+    </div>
+
+    <!-- Message for Chameleon -->
+    <div id="chameleonNotice" style="color: red; display: none;">
+        <h4>🦎 You are the Chameleon</h4>
+        <p>Try to blend in. You don't know the secret word!</p>
+    </div>
+
+    <!-- Turn Display -->
+    <div id="turnDisplay" style="margin-top: 15px;">
+        <h5>🎯 Current Turn: <span id="currentTurnName">Waiting...</span></h5>
+        <div id="turnTimer" style="font-size: 1.25em;">⏱ Time Left: <span id="timerCountdown">--</span>s</div>
+    </div>
+
+    <!-- Clue Input -->
+    <div id="clueSection">
+        <h4>Submit your clue:</h4>
+        <input type="text" id="clueInput" placeholder="Your clue..." class="form-control mb-2" />
+        <button id="submitClue" class="btn btn-primary">Submit</button>
+    </div>
+
+    <!-- Clue Log -->
+    <div id="clueLogSection">
+        <h5>💬 Clue Log</h5>
+        <ul id="clueLog" class="list-group"></ul>
+    </div>
+
+    <!-- Voting -->
+    <div id="voteSection" style="display: none;">
+        <h4>🗳️ Vote: Who is the Chameleon?</h4>
+        <select id="voteSelect" class="form-select mb-2"></select>
+        <button id="castVoteBtn" class="btn btn-warning">Cast Vote</button>
+    </div>
+
+    <!-- Result -->
+    <div id="resultSection" style="display: none;">
+        <h4 id="resultText"></h4>
+        <button id="resetBtn" class="btn btn-danger mt-2">Reset Game</button>
+    </div>
+
+    @section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.0/signalr.min.js"></script>
+    <script>
+        const connection = new signalR.HubConnectionBuilder().withUrl("/chameleonHub").build();
+        let playerName = '';
+        let isChameleon = false;
+        let turnTimerInterval;
+
+        document.getElementById("joinBtn").addEventListener("click", () => {
+            playerName = document.getElementById("playerNameInput").value.trim();
+            if (playerName !== '') {
+                connection.invoke("JoinGame", playerName);
+                document.getElementById("joinBtn").disabled = true;
+                document.getElementById("playerNameInput").disabled = true;
+            }
+        });
+
+        document.getElementById("startGameBtn").addEventListener("click", () => {
+            connection.invoke("StartGame");
+        });
+
+        document.getElementById("submitClue").addEventListener("click", () => {
+            const clue = document.getElementById("clueInput").value.trim();
+            if (clue !== '') {
+                connection.invoke("SubmitClue", clue);
+                document.getElementById("clueInput").value = '';
+                document.getElementById("clueSection").style.display = "none";
+                clearInterval(turnTimerInterval);
+            }
+        });
+
+        document.getElementById("castVoteBtn").addEventListener("click", () => {
+            const votedPlayer = document.getElementById("voteSelect").value;
+            connection.invoke("CastVote", votedPlayer);
+        });
+
+        document.getElementById("resetBtn").addEventListener("click", () => {
+            connection.invoke("ResetGame");
+        });
+
+        connection.on("UpdatePlayerList", function (playerNames) {
+            const ul = document.getElementById("playersUl");
+            const voteSelect = document.getElementById("voteSelect");
+            ul.innerHTML = '';
+            voteSelect.innerHTML = '';
+            playerNames.forEach(name => {
+                const li = document.createElement("li");
+                li.textContent = name;
+                ul.appendChild(li);
+
+                const option = document.createElement("option");
+                option.value = name;
+                option.textContent = name;
+                voteSelect.appendChild(option);
+            });
+        });
+
+        connection.on("ReceiveClue", function (player, clue) {
+            const clueLog = document.getElementById("clueLog");
+            const entry = document.createElement("li");
+            entry.className = "list-group-item";
+            entry.textContent = `${player}: ${clue}`;
+            clueLog.appendChild(entry);
+        });
+
+        connection.on("NextClueTurn", function (nextPlayerName) {
+            document.getElementById("currentTurnName").innerText = nextPlayerName;
+
+            if (nextPlayerName === playerName) {
+                document.getElementById("clueSection").style.display = "block";
+
+                // Start clue timer
+                let secondsLeft = 20;
+                document.getElementById("timerCountdown").innerText = secondsLeft;
+                turnTimerInterval = setInterval(() => {
+                    secondsLeft--;
+                    document.getElementById("timerCountdown").innerText = secondsLeft;
+                    if (secondsLeft <= 0) {
+                        clearInterval(turnTimerInterval);
+                        document.getElementById("clueSection").style.display = "none";
+                    }
+                }, 1000);
+            } else {
+                document.getElementById("clueSection").style.display = "none";
+            }
+        });
+
+        connection.on("ReceiveSecretWordAndGrid", function (secret, grid, chameleonStatus) {
+            isChameleon = chameleonStatus;
+
+            const gridDiv = document.getElementById("wordGrid");
+            gridDiv.innerHTML = '';
+            grid.forEach(word => {
+                const cell = document.createElement("div");
+                cell.className = "grid-cell";
+                cell.textContent = word;
+                if (!isChameleon && word === secret) {
+                    cell.style.backgroundColor = "#c5f3c5";
+                    cell.style.border = "2px solid green";
+                }
+                gridDiv.appendChild(cell);
+            });
+        });
+
+        connection.on("ReceiveChameleonNotification", function () {
+            document.getElementById("chameleonNotice").style.display = "block";
+        });
+
+        connection.on("StartClueSubmissionPhase", function (firstPlayerName) {
+            connection.invoke("NotifyNextTurn", firstPlayerName);
+        });
+
+        connection.on("AllCluesSubmitted", function () {
+            document.getElementById("voteSection").style.display = "block";
+            clearInterval(turnTimerInterval);
+        });
+
+        connection.on("RevealVoteResult", function (votedOut, wasChameleon) {
+            document.getElementById("voteSection").style.display = "none";
+            document.getElementById("resultSection").style.display = "block";
+            document.getElementById("resultText").innerText =
+                `${votedOut} was voted out. They ${wasChameleon ? "WERE" : "were NOT"} the Chameleon.`;
+        });
+
+        connection.on("TieBreakerVote", function (tiedPlayers) {
+            const voteSelect = document.getElementById("voteSelect");
+            voteSelect.innerHTML = '';
+            tiedPlayers.forEach(name => {
+                const option = document.createElement("option");
+                option.value = name;
+                option.textContent = name;
+                voteSelect.appendChild(option);
+            });
+            document.getElementById("voteSection").style.display = "block";
+        });
+
+        connection.on("GameReset", function () {
+            window.location.reload();
+        });
+
+        connection.start().then(() => {
+            console.log("✅ Connected to ChameleonHub.");
+        });
+
+        // Toggle rules display
+        document.getElementById("rulesBtn").addEventListener("click", () => {
+            const rulesBox = document.getElementById("rulesBox");
+            rulesBox.style.display = rulesBox.style.display === "none" ? "block" : "none";
+        });
+
+    </script>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grid-cell {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #rulesBox {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+    </style>
+    }
+}
+else
+{
+    <div class="alert alert-warning text-center">
+        <p>Please <a asp-area="Identity" asp-page="/Account/Login">log in</a> to play Emoji Chameleon!</p>
+    </div>
+}
+
+

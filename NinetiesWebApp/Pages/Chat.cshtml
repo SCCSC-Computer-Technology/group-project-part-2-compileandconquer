@@ -1,0 +1,108 @@
+﻿@page
+@model NinetiesWebApp.Pages.ChatModel
+@{
+    ViewData["Title"] = "Chat Room";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <!-- Online Users List flush left and wider -->
+            <div class="col-md-4">
+                <h4>Online Users</h4>
+                <ul id="userList" class="list-group"></ul>
+            </div>
+        }
+
+        <div class="col-md-8">
+            <h2 class="text-center">Chat Room</h2>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <!-- Chat container -->
+                <div id="chatContainer">
+                    <div id="messagesList" class="border p-3 mb-3" style="height: 500px; overflow-y: scroll;">
+                        <!-- Messages will appear here -->
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="messageInput" placeholder="Enter your message" />
+                        <button class="btn btn-success" id="sendMessageButton">Send</button>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning text-center">
+                    <p>Please <a asp-area="Identity" asp-page="/Account/Login">log in</a> to join the chat room.</p>
+                </div>
+            }
+        </div>
+    </div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script>
+        //<![CDATA[
+        var connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chatHub")
+            .withAutomaticReconnect()
+            .build();
+
+        connection.on("ReceiveMessage", function (user, message) {
+            var msgElement = document.createElement("div");
+            msgElement.textContent = user + ": " + message;
+            document.getElementById("messagesList").appendChild(msgElement);
+            document.getElementById("messagesList").scrollTop = document.getElementById("messagesList").scrollHeight;
+        });
+
+        connection.on("UpdateUserList", function (users) {
+            var userList = document.getElementById("userList");
+            if (userList) {
+                userList.innerHTML = "";
+                users.forEach(function (user) {
+                    var li = document.createElement("li");
+                    li.className = "list-group-item";
+                    li.textContent = user;
+                    userList.appendChild(li);
+                });
+            }
+        });
+
+        connection.start()
+            .then(function () {
+                console.log("SignalR connected.");
+            })
+            .catch(function (err) {
+                console.error("SignalR connection error: " + err.message);
+                alert("Failed to connect to the chat room. Please try again later.");
+            });
+
+        var sendButton = document.getElementById("sendMessageButton");
+        if (sendButton) {
+            sendButton.addEventListener("click", function () {
+                var messageInput = document.getElementById("messageInput");
+                var message = messageInput.value.trim();
+                if (message) {
+                    connection.invoke("SendMessage", message)
+                        .catch(function (err) {
+                            console.error("Send message error: " + err.message);
+                        });
+                    messageInput.value = "";
+                }
+            });
+        }
+
+        var messageInput = document.getElementById("messageInput");
+        if (messageInput) {
+            messageInput.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    sendButton.click();
+                }
+            });
+        }
+        //]]>
+    </script>
+}

@@ -1,0 +1,23 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Woah....</h1>
+<h2 class="text-danger">This totally isn't right!'</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>A Glitch in the Matrix, perhaps?</h3>
+<p>
+    Maybe we're stuck in a Netscape Navigator tab... '
+</p>
+<p>
+    <strong>Uhhh....??</strong>
+</p>

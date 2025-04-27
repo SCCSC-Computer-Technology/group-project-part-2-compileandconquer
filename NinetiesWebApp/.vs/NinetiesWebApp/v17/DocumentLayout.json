@@ -1,0 +1,819 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\properties\\servicedependencies\\ninetiesapp - web deploy\\profile.arm.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:properties\\servicedependencies\\ninetiesapp - web deploy\\profile.arm.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\style.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\style.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\models\\privateevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:models\\privateevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\models\\guestbookentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:models\\guestbookentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\guess.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\guess.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\guess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\guess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\gamehub.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\gamehub.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\gamehub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\gamehub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\models\\eventresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:models\\eventresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\emojicharades.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\emojicharades.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\emojichameleon.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\emojichameleon.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\emojichameleon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\emojichameleon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\hubs\\deezerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:hubs\\deezerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\models\\deezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:models\\deezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\chat.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\chat.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\hubs\\chameleonhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:hubs\\chameleonhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250426090643_addguestbook.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250426090643_addguestbook.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250426090643_addguestbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250426090643_addguestbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424103613_addmoodfields.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424103613_addmoodfields.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424103613_addmoodfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424103613_addmoodfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424081733_addavatarimagetouserprofiles.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424081733_addavatarimagetouserprofiles.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424081733_addavatarimagetouserprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424081733_addavatarimagetouserprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424081035_addavatarimagetouserprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424081035_addavatarimagetouserprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424081035_addavatarimagetouserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424081035_addavatarimagetouserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424030829_addselectedsongtouserprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424030829_addselectedsongtouserprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250424030829_addselectedsongtouserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250424030829_addselectedsongtouserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250418084913_adduserprofiletable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250418084913_adduserprofiletable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\20250418084913_adduserprofiletable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\20250418084913_adduserprofiletable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\00000000000000_createidentityschema.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\00000000000000_createidentityschema.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|c:\\users\\magic\\source\\repos\\ninetieswebapp\\pages\\calendar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680B634F-A434-4ECD-8091-E03E5C7DC772}|NinetiesWebApp.csproj|solutionrelative:pages\\calendar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAANAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-27T09:45:24.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profile.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Profile.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Profile.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Profile.cshtml.cs",
+              "RelativeToolTip": "Pages\\Profile.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:14:39.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "profile.arm.json",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Properties\\ServiceDependencies\\NinetiesApp - Web Deploy\\profile.arm.json",
+              "RelativeDocumentMoniker": "Properties\\ServiceDependencies\\NinetiesApp - Web Deploy\\profile.arm.json",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Properties\\ServiceDependencies\\NinetiesApp - Web Deploy\\profile.arm.json",
+              "RelativeToolTip": "Properties\\ServiceDependencies\\NinetiesApp - Web Deploy\\profile.arm.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T09:14:28.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PrivateEvent.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\PrivateEvent.cs",
+              "RelativeDocumentMoniker": "Models\\PrivateEvent.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\PrivateEvent.cs",
+              "RelativeToolTip": "Models\\PrivateEvent.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:14:15.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:12:55.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:12:45.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:16:40.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T09:08:30.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:16:21.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:15:00.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Style.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Style.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Style.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Style.cshtml.cs",
+              "RelativeToolTip": "Pages\\Style.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:15:36.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Models\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\UserProfile.cs",
+              "RelativeToolTip": "Models\\UserProfile.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:16:10.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GuestbookEntry.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\GuestbookEntry.cs",
+              "RelativeDocumentMoniker": "Models\\GuestbookEntry.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\GuestbookEntry.cs",
+              "RelativeToolTip": "Models\\GuestbookEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:12:19.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Guess.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Guess.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Guess.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Guess.cshtml.cs",
+              "RelativeToolTip": "Pages\\Guess.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:11:46.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Guess.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Guess.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Guess.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Guess.cshtml",
+              "RelativeToolTip": "Pages\\Guess.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:11:37.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GameHub.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\GameHub.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\GameHub.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\GameHub.cshtml.cs",
+              "RelativeToolTip": "Pages\\GameHub.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:11:26.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GameHub.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\GameHub.cshtml",
+              "RelativeDocumentMoniker": "Pages\\GameHub.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\GameHub.cshtml",
+              "RelativeToolTip": "Pages\\GameHub.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:11:16.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EventResponse.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\EventResponse.cs",
+              "RelativeDocumentMoniker": "Models\\EventResponse.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\EventResponse.cs",
+              "RelativeToolTip": "Models\\EventResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:11:06.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:10:56.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "Pages\\Error.cshtml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:10:46.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EmojiCharades.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\EmojiCharades.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\EmojiCharades.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\EmojiCharades.cshtml.cs",
+              "RelativeToolTip": "Pages\\EmojiCharades.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:10:35.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EmojiChameleon.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\EmojiChameleon.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\EmojiChameleon.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\EmojiChameleon.cshtml.cs",
+              "RelativeToolTip": "Pages\\EmojiChameleon.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:10:24.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EmojiChameleon.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\EmojiChameleon.cshtml",
+              "RelativeDocumentMoniker": "Pages\\EmojiChameleon.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\EmojiChameleon.cshtml",
+              "RelativeToolTip": "Pages\\EmojiChameleon.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:10:14.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DeezerService.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Hubs\\DeezerService.cs",
+              "RelativeDocumentMoniker": "Hubs\\DeezerService.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Hubs\\DeezerService.cs",
+              "RelativeToolTip": "Hubs\\DeezerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:09:53.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Deezer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\Deezer.cs",
+              "RelativeDocumentMoniker": "Models\\Deezer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Models\\Deezer.cs",
+              "RelativeToolTip": "Models\\Deezer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:09:42.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:09:31.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Chat.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Chat.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Chat.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Chat.cshtml.cs",
+              "RelativeToolTip": "Pages\\Chat.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:09:20.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Chat.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Chat.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Chat.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Chat.cshtml",
+              "RelativeToolTip": "Pages\\Chat.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:09:06.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ChameleonHub.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Hubs\\ChameleonHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChameleonHub.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Hubs\\ChameleonHub.cs",
+              "RelativeToolTip": "Hubs\\ChameleonHub.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:08:55.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Calendar.cshtml",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Calendar.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Calendar.cshtml",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Calendar.cshtml",
+              "RelativeToolTip": "Pages\\Calendar.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:08:44.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAhwC0BAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:07:09.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:06:49.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250426090643_AddGuestbook.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250426090643_AddGuestbook.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250426090643_AddGuestbook.Designer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250426090643_AddGuestbook.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250426090643_AddGuestbook.Designer.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAAhwC8BAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:05:31.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20250426090643_AddGuestbook.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250426090643_AddGuestbook.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250426090643_AddGuestbook.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250426090643_AddGuestbook.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250426090643_AddGuestbook.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:05:20.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20250424103613_AddMoodFields.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424103613_AddMoodFields.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424103613_AddMoodFields.Designer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424103613_AddMoodFields.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424103613_AddMoodFields.Designer.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAhwOYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:04:41.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20250424103613_AddMoodFields.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424103613_AddMoodFields.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424103613_AddMoodFields.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424103613_AddMoodFields.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424103613_AddMoodFields.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:04:30.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20250424081733_AddAvatarImageToUserProfiles.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.Designer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.Designer.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAhwOYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:03:57.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20250424081733_AddAvatarImageToUserProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424081733_AddAvatarImageToUserProfiles.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:03:47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20250424081035_AddAvatarImageToUserProfile.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.Designer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.Designer.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAhwOYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:03:14.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20250424081035_AddAvatarImageToUserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424081035_AddAvatarImageToUserProfile.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:03:03.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20250424030829_AddSelectedSongToUserProfile.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.Designer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.Designer.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAhwOYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:02:17.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20250424030829_AddSelectedSongToUserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250424030829_AddSelectedSongToUserProfile.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:02:06.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20250418084913_AddUserProfileTable.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250418084913_AddUserProfileTable.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250418084913_AddUserProfileTable.Designer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250418084913_AddUserProfileTable.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250418084913_AddUserProfileTable.Designer.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAhwOYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:01:11.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20250418084913_AddUserProfileTable.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250418084913_AddUserProfileTable.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250418084913_AddUserProfileTable.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\20250418084913_AddUserProfileTable.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250418084913_AddUserProfileTable.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:00:57.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "00000000000000_CreateIdentitySchema.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:00:15.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "00000000000000_CreateIdentitySchema.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeToolTip": "Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:00:00.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Calendar.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Calendar.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Calendar.cshtml.cs",
+              "ToolTip": "C:\\Users\\magic\\source\\repos\\NinetiesWebApp\\Pages\\Calendar.cshtml.cs",
+              "RelativeToolTip": "Pages\\Calendar.cshtml.cs",
+              "ViewState": "AgIAABMBAAAAAAAAAAASwCUBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T08:57:51.964Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

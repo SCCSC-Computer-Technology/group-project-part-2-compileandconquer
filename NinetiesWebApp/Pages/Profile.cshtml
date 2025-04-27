@@ -1,0 +1,171 @@
+﻿@page "/Profile/{userId?}"
+@model ProfileModel
+@{
+    ViewData["Title"] = "Your Profile";
+}
+<style>
+    body, .profile-page {
+        background-color: @(Model.CustomProfile?.BackgroundColor ?? "#ffffff") !important;
+        background-image: none !important;
+        font-family: '@(Model.CustomProfile?.Font ?? "Arial")', sans-serif;
+    }
+
+    h1, p, a {
+        font-family: '@(Model.CustomProfile?.Font ?? "Arial")', sans-serif;
+    }
+
+    .profile-header {
+        margin-bottom: 20px;
+    }
+
+    .profile-greeting {
+        font-size: 4.5rem;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: white; /* Set the text color to white */
+    }
+
+    .profile-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    
+
+    .profile-avatar {
+        width: 250px; /* Fixed width */
+        height: 250px; /* Fixed height */
+        border-radius: 0;
+        object-fit: contain; /* Maintains aspect ratio */
+        background-color: transparent;
+        margin-top: -60px; /* General adjustment */
+    }
+
+    .mood-display {
+        font-family: 'Comic Sans MS', cursive;
+        font-size: 2rem;
+        color: black; /* This is your black text */
+        text-shadow: 2px 2px darkcyan;
+        margin-top: 0;
+    }
+
+    .top-right-button {
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        z-index: 10;
+    }
+
+    .retro-btn {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: 4px solid black;
+        background: linear-gradient(to bottom, #ccc, #eee);
+        color: black;
+        box-shadow: 4px 4px 0 black;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: inline-block;
+        text-align: center;
+    }
+</style>
+<div class="profile-page">
+    <div class="top-right-button">
+        @if (User.Identity != null && User.Identity.IsAuthenticated)
+        {
+            <a class="btn retro-btn" href="/Style">UPDATE YOUR PROFILE</a>
+        }
+    </div>
+
+    <!-- White text at the top -->
+    <div class="profile-header">
+        <h1 class="display-4 profile-greeting">
+            What's up, @(Model.CustomProfile?.DisplayName ?? Model.CurrentUser?.UserName ?? "User")?
+        </h1>
+    </div>
+
+    <!-- Avatar next to mood text -->
+    <div class="profile-content">
+        @if (!string.IsNullOrEmpty(Model.CustomProfile?.AvatarImage) && Model.CustomProfile.AvatarImage != "none")
+        {
+            <img src="~/images/avatars/@Model.CustomProfile.AvatarImage"
+                 alt="Avatar"
+                 class="profile-avatar" />
+        }
+
+        <!-- Black text underneath -->
+        <div>
+            @if (!string.IsNullOrEmpty(Model.CustomProfile?.CurrentMood) && !string.IsNullOrEmpty(Model.CustomProfile?.MoodEmoticon))
+            {
+                <p class="mood-display">
+                    @Model.CustomProfile.CurrentMood @Model.CustomProfile.MoodEmoticon
+                </p>
+            }
+            else
+            {
+                <p class="mood-display">Set your mood in your profile!</p>
+            }
+        </div>
+    </div>
+
+    <div class="guestbook-section">
+        <h3>Guestbook 📝</h3>
+        @if (User.Identity != null && User.Identity.IsAuthenticated)
+        {
+            <form asp-page-handler="Post" class="guestbook-form" method="post">
+                <input type="hidden" name="userId" value="@Model.CustomProfile?.UserId" />
+                <div class="form-group">
+                    <label>Leave a Message</label>
+                    <textarea asp-for="GuestbookInput.Message" class="form-control" rows="4" placeholder="Leave a Message!"></textarea>
+                    <span asp-validation-for="GuestbookInput.Message" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Pick a 90s Emoticon</label>
+                    <select asp-for="GuestbookInput.Emoticon" class="form-control">
+                        <option value="">Add an Emoticon!</option>
+                        <option value=":-D">:-D</option>
+                        <option value=";-)">;-)</option>
+                        <option value=">:-(">):-(</option>
+                        <option value=":-P">:-P</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn retro-btn">Sign Guestbook</button>
+            </form>
+        }
+        else
+        {
+            <p>You gotta <a href="/Identity/Account/Login">log in</a> to sign the guestbook, pal!</p>
+        }
+
+        @if (Model.GuestbookEntries?.Any() == true)
+        {
+            <div class="guestbook-entries">
+                @foreach (var entry in Model.GuestbookEntries)
+                {
+                    <div class="guestbook-entry">
+                        <p>
+                            <strong>@(entry.SenderUser?.DisplayName ?? "Unknown User")</strong>: @entry.Message
+                            @if (!string.IsNullOrEmpty(entry.Emoticon))
+                            {
+                                <span>@entry.Emoticon</span>
+                            }
+                        </p>
+                        <small>Posted on @entry.PostedAt.ToString("MMM dd, yyyy 'at' hh:mm tt")</small>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>No messages yet! Be the first to sign this guestbook! ✨</p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

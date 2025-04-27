@@ -1,0 +1,120 @@
+﻿@page
+@model NinetiesWebApp.Pages.GuessModel
+@{
+    ViewData["Title"] = "Who Sang It?";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="container mt-5">
+        @if (Model.Game.IsGameOver)
+        {
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Game Over!</h2>
+                </div>
+                <div class="card-body text-center">
+                    <h3 style="color: darkcyan;">Your final score: @Model.Game.Score out of @Model.Game.Tracks.Count</h3>
+                    <p>
+                        @{
+                            var percentage = (double)Model.Game.Score / Model.Game.Tracks.Count * 100;
+                            if (percentage >= 80)
+                            {
+                                <span class="text-success">Excellent job! You're a 90s music expert!</span>
+                            }
+                            else if (percentage >= 60)
+                            {
+                                <span class="text-primary">Good work! You know your 90s hits!</span>
+                            }
+                            else if (percentage >= 40)
+                            {
+                                <span class="text-warning">Not bad! Keep practicing those 90s classics!</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">Looks like you missed the 90s music scene!</span>
+                            }
+                        }
+                    </p>
+                    <form method="post" asp-page-handler="NewGame">
+                        <button type="submit" class="btn btn-primary">Play Again</button>
+                    </form>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0">Name That Artist!</h2>
+                        <div class="badge bg-light text-dark">
+                            Song @(Model.Game.CurrentTrackIndex + 1) of @Model.Game.Tracks.Count
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+
+
+                    @if (Model.ShowTitle)
+                    {
+                        <h4 class="text-center mb-4">@Model.Game.CurrentTrack.Title</h4>
+                    }
+                    else
+                    {
+                        <h4 class="text-center mb-4" style="color: darkcyan;">Who performed this song?</h4>
+                    }
+
+                    <div class="d-flex justify-content-center mb-4">
+                        <audio controls autoplay>
+                            <source src="@Model.Game.CurrentTrack.PreviewUrl" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(Model.FeedbackMessage))
+                    {
+                        <div class="alert alert-@(Model.FeedbackClass == "text-success" ? "success" : "danger")">
+                            @Model.FeedbackMessage
+                        </div>
+                        <form method="post" asp-page-handler="NextSong" class="text-center">
+                            <button type="submit" class="btn btn-primary">Next Song</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form method="post" asp-page-handler="SubmitAnswer">
+                            <div class="list-group mb-4">
+                                @foreach (var answer in Model.Game.PossibleAnswers)
+                                {
+                                    <label class="list-group-item">
+                                        <input type="radio" class="form-check-input me-2" name="SelectedAnswer" value="@answer" required />
+                                        @answer
+                                    </label>
+                                }
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Submit Answer</button>
+                            </div>
+                        </form>
+                    }
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>Score: @Model.Game.Score</div>
+                        <form method="post" asp-page-handler="NewGame" class="m-0">
+                            <button type="submit" class="btn btn-sm btn-outline-secondary">Restart Game</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning text-center">
+        <p>Please <a asp-area="Identity" asp-page="/Account/Login">log in</a> to play!</p>
+    </div>
+}
+
