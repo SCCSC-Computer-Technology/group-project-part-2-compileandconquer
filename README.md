@@ -1,1 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/03TpDRv8)
+The Calendar won't work for yall. 
+Apparently you can't upload projects that include OAuth keys from Google. 
+They got super mad about it and disabled the keys, so it won't work now. 
+I got new ones, but can't put them on here. 
